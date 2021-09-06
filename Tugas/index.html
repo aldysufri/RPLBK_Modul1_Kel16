@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Modul 1 - Kelompok 16</title>
+    <style>
+        .btn {
+            font-family: Arial;
+            color: #FFFFFF;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px #3866a3 solid;
+            background: linear-gradient(180deg, #63B8EE 5%, #468CCF 100%);
+            text-shadow: 1px 1px 1px #528ecc;
+            box-shadow: inset 1px 1px 2px 0px #bbdaf7;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn:hover {
+            background: linear-gradient(180deg, #468CCF 5%, #63B8EE 100%);
+        }
+        .btn:disabled{
+            background: linear-gradient(180deg, #9da2a7 5%, #afbdc5 100%);
+        }
+        .btn-text {
+            padding: 10px 18px;
+        }
+
+        body {
+            margin-top: 10%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-image: url(https://source.unsplash.com/random/?nature);
+            background-size: 100%;
+        }
+
+        .container {
+            width: 600px;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+            background-color: aquamarine;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .textbox {
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border: 1px solid #848484;
+            outline: 0;
+            height: 25px;
+            width: 275px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        li{
+            list-style:none
+        }
+        .fresh{
+            background: red;
+        }
+        .fresh:hover {
+            background: linear-gradient(180deg, #d33939 5%, #ee6363 100%);
+        }
+        .head h1{
+        color: rgb(245, 245, 245);
+        text-shadow:0px 6px 5px #000000;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="head">
+            <center>
+        <h1>Tugas Modul 1 RPLBK - Kelompok 16 <br> Suit Jepang</h1>
+    </center>
+    </div>
+
+    <div class="container">
+        <marquee width="500" height="40"><p style="color: red;">Aturan main: Masukkan inputan user berupa text (batu/gunting/kertas)</p></marquee>
+        <h4>Inputan User</h4>
+        <input placeholder="Masukkan Pilihan" class="textbox" type="text" id="user">
+        <h4 id="computer">Inputan Computer <p style="color: red;" id="comp"></p></h4>
+        <button id="en" type="button" class="btn" onclick="cek()">Play !!!</button>
+        <button class="btn fresh" onClick="window.location.reload();">Reset</button>
+        <h2 style="color: rgb(88, 0, 139);"  id="hore"></h2>
+        <script src="script.js"></script>
+</body>
+
+</html>
